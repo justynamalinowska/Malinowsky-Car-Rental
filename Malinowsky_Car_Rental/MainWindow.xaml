@@ -5,9 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Malinowsky_Car_Rental"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Icon="/Icon.png">
+        Title="MainWindow" Height="450" Width="800" Icon="/Images/Icon.png">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="126" Margin="10,10,0,0" VerticalAlignment="Top" Width="211" Source="/logo4.png"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="248*"/>
+            <ColumnDefinition Width="275*"/>
+            <ColumnDefinition Width="275*"/>
+            <ColumnDefinition Width="3"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Left" Height="136" Margin="10,0,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="201" Source="/Images/logo4.png"/>
 
     </Grid>
 </Window>
