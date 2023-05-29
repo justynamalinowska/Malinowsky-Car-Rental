@@ -32,7 +32,7 @@
                         <ColumnDefinition Width="auto"/>
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Employees" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="64,-13,0,0"/>
+                    <TextBlock Text="Employees" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="62,-13,0,0"/>
                 </Grid>
             </Button>
         </StackPanel>
@@ -44,7 +44,7 @@
                         <ColumnDefinition Width="auto"/>
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Customers" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="64,-13,0,0"/>
+                    <TextBlock Text="Customers" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="62,-14,0,0"/>
                 </Grid>
             </Button>
         </StackPanel>
@@ -56,7 +56,7 @@
                         <ColumnDefinition Width="auto"/>
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Rentals" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,-14,0,0"/>
+                    <TextBlock Text="Rentals" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,-13,0,0"/>
                 </Grid>
             </Button>
         </StackPanel>
@@ -69,6 +69,30 @@
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
                     <TextBlock Text="Cars" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="79,-13,0,0"/>
+                </Grid>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="6" Margin="10,10,10,10">
+            <Button Grid.Row="6" Name="btnBases" Width="200" Height="50" HorizontalAlignment="Center" Background="#FFEFA6E1">
+                <Grid Width="180">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Bases" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,-13,0,0"/>
+                </Grid>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="7" Margin="10,10,10,10">
+            <Button Grid.Row="7" Name="btnExit" Width="200" Height="50" HorizontalAlignment="Center" Background="#FFEFA6E1">
+                <Grid Width="180">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Exit" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="81,-13,0,0"/>
                 </Grid>
             </Button>
         </StackPanel>
