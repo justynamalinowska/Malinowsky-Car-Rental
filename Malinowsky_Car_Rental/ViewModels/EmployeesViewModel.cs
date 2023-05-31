@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Malinowsky_Car_Rental.ViewModels
 {
-    public class EmpolyeesViewModel
+    public class EmployeesViewModel
     {
     }
 }

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Malinowsky_Car_Rental.ViewModels;
 
 namespace Malinowsky_Car_Rental
 {
@@ -23,6 +24,12 @@ namespace Malinowsky_Car_Rental
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnEmployees_Click(object sender, RoutedEventArgs e)
+        {
+            lblWindowName.Content = "Employees";
+            DataContext = new EmployeesViewModel();
         }
     }
 }

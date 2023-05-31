@@ -29,7 +29,7 @@
         <Label x:Name="lblWindowName" Content="Windows Name" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50,10,0,0" FontSize="22"/>
 
         <StackPanel Grid.Row="2" Margin="10,10,10,10">
-            <Button Grid.Row="2" Name="btnEmployees" Width="200" Height="50" HorizontalAlignment="Center" Background="#FFEFA6E1">
+            <Button Grid.Row="2" Name="btnEmployees" Width="200" Height="50" HorizontalAlignment="Center" Background="#FFEFA6E1" Click="btnEmployees_Click">
                 <Grid Width="180">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="auto"/>
@@ -102,7 +102,7 @@
     </Grid>
 
     <Window.Resources>
-        <DataTemplate x:Name="EmployeesTemplate" DataType="{x:Type viewmodels:EmpolyeesViewModel}">
+        <DataTemplate x:Name="EmployeesTemplate" DataType="{x:Type viewmodels:EmployeesViewModel}">
             <views:EmployeesList>
             </views:EmployeesList>
         </DataTemplate>
