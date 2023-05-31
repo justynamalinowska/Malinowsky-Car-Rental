@@ -16,9 +16,9 @@ namespace Malinowsky_Car_Rental.Views
     /// <summary>
     /// Interaction logic for EmployeersList.xaml
     /// </summary>
-    public partial class EmployeersList : UserControl
+    public partial class EmployeesList : UserControl
     {
-        public EmployeersList()
+        public EmployeesList()
         {
             InitializeComponent();
         }
