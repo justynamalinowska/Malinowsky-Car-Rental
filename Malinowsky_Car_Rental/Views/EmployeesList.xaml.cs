@@ -25,7 +25,7 @@ namespace Malinowsky_Car_Rental.Views
             InitializeComponent();
             using(MalinowskyCarRentalContext db=new MalinowskyCarRentalContext())
             {
-                List<Pracownicy> list = db.Pracownicy.ToList();
+                List<Pracownicy> list = db.Pracownicy.OrderBy(x=>x.IdPracownika).ToList();
                 gridEmployees.ItemsSource = list;
             }
            
