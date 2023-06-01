@@ -10,7 +10,7 @@ namespace Malinowsky_Car_Rental.DB
             Bazy = new HashSet<Bazy>();
             Wypozyczenia = new HashSet<Wypozyczenia>();
         }
-
+ 
         public int IdPracownika { get; set; }
         public int? IdBazy { get; set; }
         public string Pesel { get; set; }
