@@ -30,5 +30,16 @@ namespace Malinowsky_Car_Rental.Views
             }
            
         }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            EmployeesPage page = new EmployeesPage();
+            page.ShowDialog();
+            using (MalinowskyCarRentalContext db = new MalinowskyCarRentalContext())
+            {
+                List<Pracownicy> list = db.Pracownicy.ToList();
+                gridEmployees.ItemsSource = list;
+            }
+        }
     }
 }
