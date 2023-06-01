@@ -24,21 +24,21 @@
         </Grid>
         <DataGrid x:Name="gridEmployees" IsReadOnly="True" AutoGenerateColumns="False" SelectionUnit="FullRow">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="EmployeeId" Width="*" Binding="{Binding id_pracownika}" Visibility="Hidden"/>
-                <DataGridTextColumn Header="BaseId" Width="auto" Binding="{Binding id_bazy}"/>
-                <DataGridTextColumn Header="pesel" Width="auto" Binding="{Binding pesel}"/>
-                <DataGridTextColumn Header="Name" Width="auto" Binding="{Binding imie}"/>
-                <DataGridTextColumn Header="Surname" Width="auto" Binding="{Binding nazwisko}"/>
-                <DataGridTextColumn Header="BirthDate" Width="auto" Binding="{Binding data_urodzenia}"/>
-                <DataGridTextColumn Header="PhoneNo" Width="auto" Binding="{Binding nr_telefonu}"/>
-                <DataGridTextColumn Header="EmploymentDate" Width="auto" Binding="{Binding data_zatrudnienia}"/>
-                <DataGridTextColumn Header="Position" Width="auto" Binding="{Binding stanowisko}"/>
-                <DataGridTextColumn Header="HourlyRate" Width="auto" Binding="{Binding stawka_godzinowa}"/>
-                <DataGridTextColumn Header="Country" Width="auto" Binding="{Binding kraj}"/>
-                <DataGridTextColumn Header="City" Width="auto" Binding="{Binding miasto}"/>
-                <DataGridTextColumn Header="Street" Width="auto" Binding="{Binding ulica}"/>
-                <DataGridTextColumn Header="StreetNo" Width="auto" Binding="{Binding numer_domu}"/>
-                <DataGridTextColumn Header="HouseNo" Width="auto" Binding="{Binding numer_lokalu}"/>
+                <DataGridTextColumn Header="EmployeeId" Width="*" Binding="{Binding IdPracownika}" Visibility="Hidden"/>
+                <DataGridTextColumn Header="BaseId" Width="auto" Binding="{Binding IdBazy}"/>
+                <DataGridTextColumn Header="pesel" Width="auto" Binding="{Binding Pesel}"/>
+                <DataGridTextColumn Header="Name" Width="auto" Binding="{Binding Imie}"/>
+                <DataGridTextColumn Header="Surname" Width="auto" Binding="{Binding Nazwisko}"/>
+                <DataGridTextColumn Header="BirthDate" Width="auto" Binding="{Binding DataUrodzenia}"/>
+                <DataGridTextColumn Header="PhoneNo" Width="auto" Binding="{Binding NrTelefonu}"/>
+                <DataGridTextColumn Header="EmploymentDate" Width="auto" Binding="{Binding DataZatrudnienia}"/>
+                <DataGridTextColumn Header="Position" Width="auto" Binding="{Binding Stanowisko}"/>
+                <DataGridTextColumn Header="HourlyRate" Width="auto" Binding="{Binding StawkaGodzinowa}"/>
+                <DataGridTextColumn Header="Country" Width="auto" Binding="{Binding Kraj}"/>
+                <DataGridTextColumn Header="City" Width="auto" Binding="{Binding Miasto}"/>
+                <DataGridTextColumn Header="Street" Width="auto" Binding="{Binding Ulica}"/>
+                <DataGridTextColumn Header="StreetNo" Width="auto" Binding="{Binding NumerDomu}"/>
+                <DataGridTextColumn Header="HouseNo" Width="auto" Binding="{Binding NumerLokalu}"/>
             </DataGrid.Columns>
             
         </DataGrid>

@@ -27,8 +27,6 @@ namespace Malinowsky_Car_Rental.Views
             {
                 List<Pracownicy> list = db.Pracownicy.ToList();
                 gridEmployees.ItemsSource = list;
-
-
             }
            
         }
