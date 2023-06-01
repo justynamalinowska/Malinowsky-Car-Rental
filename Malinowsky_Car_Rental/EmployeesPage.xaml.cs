@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Malinowsky_Car_Rental.DB;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -25,6 +26,28 @@ namespace Malinowsky_Car_Rental
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtBaseId.Text.Trim() is null)
+                MessageBox.Show("Please fill the empty spaces!");
+            else
+            {
+                using(MalinowskyCarRentalContext db = new MalinowskyCarRentalContext())
+                {
+                    Pracownicy emp = new Pracownicy();
+                    ///emp.IdBazy = txtBaseId;
+                    emp.Imie = txtName.Text;
+                    emp.Nazwisko = txtSurname.Text;
+                    db.Pracownicy.Add(emp);
+                    db.SaveChanges();
+                    txtName.Clear();
+                    txtSurname.Clear();
+                    MessageBox.Show("Employee has been added");
+
+                }
+            }
         }
     }
 }

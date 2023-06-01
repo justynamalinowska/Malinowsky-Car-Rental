@@ -26,7 +26,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="EmployeeId" Width="*" Binding="{Binding IdPracownika}" Visibility="Hidden"/>
                 <DataGridTextColumn Header="BaseId" Width="auto" Binding="{Binding IdBazy}"/>
-                <DataGridTextColumn Header="pesel" Width="auto" Binding="{Binding Pesel}"/>
+                <DataGridTextColumn Header="PESEL" Width="auto" Binding="{Binding Pesel}"/>
                 <DataGridTextColumn Header="Name" Width="auto" Binding="{Binding Imie}"/>
                 <DataGridTextColumn Header="Surname" Width="auto" Binding="{Binding Nazwisko}"/>
                 <DataGridTextColumn Header="BirthDate" Width="auto" Binding="{Binding DataUrodzenia}"/>
