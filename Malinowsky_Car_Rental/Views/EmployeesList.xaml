@@ -30,15 +30,15 @@
                 <DataGridTextColumn Header="Name" Width="auto" Binding="{Binding Imie}"/>
                 <DataGridTextColumn Header="Surname" Width="auto" Binding="{Binding Nazwisko}"/>
                 <DataGridTextColumn Header="BirthDate" Width="auto" Binding="{Binding DataUrodzenia}"/>
-                <DataGridTextColumn Header="PhoneNo" Width="auto" Binding="{Binding NrTelefonu}"/>
-                <DataGridTextColumn Header="EmploymentDate" Width="auto" Binding="{Binding DataZatrudnienia}"/>
+                <DataGridTextColumn Header="PhoneNo" Width="auto" Binding="{Binding NrTelefonu}" Visibility="Hidden"/>
+                <DataGridTextColumn Header="EmploymentDate" Width="auto" Binding="{Binding DataZatrudnienia}" Visibility="Hidden"/>
                 <DataGridTextColumn Header="Position" Width="auto" Binding="{Binding Stanowisko}"/>
-                <DataGridTextColumn Header="HourlyRate" Width="auto" Binding="{Binding StawkaGodzinowa}"/>
+                <DataGridTextColumn Header="HourlyRate" Width="auto" Binding="{Binding StawkaGodzinowa}" Visibility="Hidden"/>
                 <DataGridTextColumn Header="Country" Width="auto" Binding="{Binding Kraj}"/>
-                <DataGridTextColumn Header="City" Width="auto" Binding="{Binding Miasto}"/>
-                <DataGridTextColumn Header="Street" Width="auto" Binding="{Binding Ulica}"/>
-                <DataGridTextColumn Header="StreetNo" Width="auto" Binding="{Binding NumerDomu}"/>
-                <DataGridTextColumn Header="HouseNo" Width="auto" Binding="{Binding NumerLokalu}"/>
+                <DataGridTextColumn Header="City" Width="auto" Binding="{Binding Miasto}" Visibility="Hidden"/>
+                <DataGridTextColumn Header="Street" Width="auto" Binding="{Binding Ulica}" Visibility="Hidden"/>
+                <DataGridTextColumn Header="StreetNo" Width="auto" Binding="{Binding NumerDomu}" Visibility="Hidden"/>
+                <DataGridTextColumn Header="HouseNo" Width="auto" Binding="{Binding NumerLokalu}" Visibility="Hidden"/>
             </DataGrid.Columns>
             
         </DataGrid>
