@@ -21,5 +21,10 @@ namespace Malinowsky_Car_Rental
         {
             InitializeComponent();
         }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
