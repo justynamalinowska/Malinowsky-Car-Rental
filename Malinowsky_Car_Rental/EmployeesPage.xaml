@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Malinowsky_Car_Rental"
         mc:Ignorable="d"
-        Title="Employees Page" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" FontSize="15" FontWeight="Bold" Height="400" Width="750" Icon="/Images/Icon.png" Loaded="Window_Loaded">
+        Title="Employees Page" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" FontSize="17" Height="400" Width="750" Icon="/Images/Icon.png" Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -15,29 +15,29 @@
             <RowDefinition Height="25*"/>
             <RowDefinition Height="7*"/>
         </Grid.RowDefinitions>
-        <Label Content="Base Id" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="60" Margin="40,34,0,0"/>
+        <Label Content="Base Id" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="67" Margin="40,34,0,0"/>
         <ComboBox x:Name="cmbBaseId" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,36,0,0" BorderBrush="White" Loaded="cmbBaseId_Loaded" Height="26"/>
-        <Label Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,98,0,0" Height="30" Width="52"/>
+        <Label Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,98,0,0" Height="30" Width="67"/>
         <TextBox x:Name="txtName" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="150,102,0,0" Height="22"/>
-        <Label Content="PESEL" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,68,0,0" Height="30" Width="51"/>
+        <Label Content="PESEL" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,68,0,0" Height="30" Width="67"/>
         <TextBox x:Name="txtPESEL" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="150,68,0,0" Height="22"/>
-        <Label Content="Surname" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,132,0,0" Height="30" Width="72"/>
+        <Label Content="Surname" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,132,0,0" Height="30" Width="86"/>
         <TextBox x:Name="txtSurname" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="150,136,0,0" Height="22"/>
-        <Label Content="Contact No." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,167,0,0" Height="30" Width="94"/>
+        <Label Content="Contact No." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,167,0,0" Height="30" Width="105"/>
         <TextBox x:Name="txtContactNo" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="150,171,0,0" Height="22"/>
-        <Label Content="Position" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,202,0,0" Height="30" Width="67"/>
+        <Label Content="Position" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,202,0,0" Height="30" Width="86"/>
         <TextBox x:Name="txtPosition" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="150,206,0,0" Height="22"/>
-        <Label Content="Hourly Rate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,34,0,0" Height="30" Width="94" Grid.Column="1"/>
+        <Label Content="Hourly Rate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,34,0,0" Height="30" Width="110" Grid.Column="1"/>
         <TextBox x:Name="txtHourlyRate" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="187,34,0,0" Height="22" Grid.Column="1"/>
-        <Label Content="Country" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,68,0,0" Grid.Column="1" Height="30" Width="66"/>
+        <Label Content="Country" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,68,0,0" Grid.Column="1" Height="30" Width="84"/>
         <TextBox x:Name="txtCountry" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="187,68,0,0" Grid.Column="1" Height="22"/>
         <Label Content="City" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,98,0,0" Grid.Column="1" Height="30" Width="38"/>
         <TextBox x:Name="txtCity" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="187,102,0,0" Grid.Column="1" Height="22"/>
-        <Label Content="Street" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,132,0,0" Grid.Column="1" Height="30" Width="52"/>
+        <Label Content="Street" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,132,0,0" Grid.Column="1" Height="30" Width="63"/>
         <TextBox x:Name="txtStreet" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="187,136,0,0" Grid.Column="1" Height="22"/>
-        <Label Content="Apartment No." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,167,0,0" Grid.Column="1" Height="30" Width="116"/>
+        <Label Content="Apartment No." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,167,0,0" Grid.Column="1" Height="30" Width="127"/>
         <TextBox x:Name="txtApartmentNo" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="187,171,0,0" Grid.Column="1" Height="22"/>
-        <Label Content="House No." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,202,0,0" Grid.Column="1" Height="30" Width="84"/>
+        <Label Content="House No." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,202,0,0" Grid.Column="1" Height="30" Width="94"/>
         <TextBox x:Name="txtHouseNo" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="187,206,0,0" Grid.Column="1" Height="22"/>
 
         <Button x:Name="btnSave" Content="Save" Grid.Row="1" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Click="btnSave_Click" Background="#FFEFA6E1" Margin="0,10"/>
