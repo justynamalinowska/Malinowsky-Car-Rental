@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Malinowsky_Car_Rental"
         mc:Ignorable="d"
-        Title="Employees Page" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" FontSize="15" FontWeight="Bold" Height="400" Width="750" Icon="/Images/Icon.png">
+        Title="Employees Page" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" FontSize="15" FontWeight="Bold" Height="400" Width="750" Icon="/Images/Icon.png" Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -32,9 +32,9 @@
         <Label Content="Country" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,68,0,0" Grid.Column="1" Height="30" Width="66"/>
         <TextBox x:Name="txtCountry" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="187,68,0,0" Grid.Column="1" Height="22"/>
         <Label Content="City" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,98,0,0" Grid.Column="1" Height="30" Width="38"/>
-        <TextBox x:Name="txtCity" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="187,98,0,0" Grid.Column="1" Height="22"/>
+        <TextBox x:Name="txtCity" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="187,102,0,0" Grid.Column="1" Height="22"/>
         <Label Content="Street" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,132,0,0" Grid.Column="1" Height="30" Width="52"/>
-        <TextBox x:Name="txtStreet" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="187,131,0,0" Grid.Column="1" Height="22"/>
+        <TextBox x:Name="txtStreet" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="187,136,0,0" Grid.Column="1" Height="22"/>
         <Label Content="Apartment No." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,167,0,0" Grid.Column="1" Height="30" Width="116"/>
         <TextBox x:Name="txtApartmentNo" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="187,171,0,0" Grid.Column="1" Height="22"/>
         <Label Content="House No." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,202,0,0" Grid.Column="1" Height="30" Width="84"/>
