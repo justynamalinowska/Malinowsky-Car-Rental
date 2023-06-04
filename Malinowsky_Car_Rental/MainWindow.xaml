@@ -7,7 +7,7 @@
         xmlns:views="clr-namespace:Malinowsky_Car_Rental.Views"
         xmlns:viewmodels="clr-namespace:Malinowsky_Car_Rental.ViewModels"
         mc:Ignorable="d"
-        Title="WPF Car Rental" Name="RentalMainWindow" Height="600" Width="1100" Icon="/Images/Icon.png">
+        Title="WPF Car Rental" WindowStartupLocation="CenterScreen" Name="RentalMainWindow" Height="600" Width="1100" Icon="/Images/Icon.png">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="317*"/>
