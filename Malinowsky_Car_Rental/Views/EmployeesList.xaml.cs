@@ -41,5 +41,17 @@ namespace Malinowsky_Car_Rental.Views
                 gridEmployees.ItemsSource = list;
             }
         }
+
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            Pracownicy prac = (Pracownicy)gridEmployees.SelectedItem;
+            EmployeesPage page = new EmployeesPage();
+            page.pracownicy = prac;
+            page.ShowDialog();
+            using(MalinowskyCarRentalContext db = new MalinowskyCarRentalContext())
+            {
+                gridEmployees.ItemsSource = db.Pracownicy.OrderBy(x => x.IdPracownika).ToList();
+            }
+        }
     }
 }

@@ -19,23 +19,23 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Button Margin="40,5,40,5" Name="btnAdd" Content="Add" FontSize="18" FontWeight="Bold" Click="btnAdd_Click"/>
-            <Button Margin="40,5,40,5" Name="btnUpdate" Content="Update" Grid.Column="1" FontSize="18" FontWeight="Bold"/>
+            <Button Margin="40,5,40,5" Name="btnUpdate" Content="Update" Grid.Column="1" FontSize="18" FontWeight="Bold" Click="btnUpdate_Click"/>
             <Button Margin="40,5,40,5" Name="btnDelete" Content="Delete" Grid.Column="2" FontSize="18" FontWeight="Bold"/>
         </Grid>
         <DataGrid x:Name="gridEmployees" IsReadOnly="True" AutoGenerateColumns="False" SelectionUnit="FullRow">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="EmployeeId" Width="*" Binding="{Binding IdPracownika}" Visibility="Hidden"/>
-                <DataGridTextColumn Header="BaseId" Width="auto" Binding="{Binding IdBazy}"/>
+                <DataGridTextColumn Header="EmployeeId" Width="*" Binding="{Binding IdPracownika}"/>
+                <DataGridTextColumn Header="BaseId" Width="auto" Binding="{Binding IdBazy}" Visibility="Hidden"/>
                 <DataGridTextColumn Header="PESEL" Width="auto" Binding="{Binding Pesel}"/>
                 <DataGridTextColumn Header="Name" Width="auto" Binding="{Binding Imie}"/>
                 <DataGridTextColumn Header="Surname" Width="auto" Binding="{Binding Nazwisko}"/>
-                <DataGridTextColumn Header="BirthDate" Width="auto" Binding="{Binding DataUrodzenia}"/>
-                <DataGridTextColumn Header="PhoneNo" Width="auto" Binding="{Binding NrTelefonu}" Visibility="Hidden"/>
+                <DataGridTextColumn Header="BirthDate" Width="auto" Binding="{Binding DataUrodzenia}" Visibility="Hidden"/>
+                <DataGridTextColumn Header="PhoneNo" Width="auto" Binding="{Binding NrTelefonu}" />
                 <DataGridTextColumn Header="EmploymentDate" Width="auto" Binding="{Binding DataZatrudnienia}" Visibility="Hidden"/>
                 <DataGridTextColumn Header="Position" Width="auto" Binding="{Binding Stanowisko}"/>
-                <DataGridTextColumn Header="HourlyRate" Width="auto" Binding="{Binding StawkaGodzinowa}" Visibility="Hidden"/>
+                <DataGridTextColumn Header="HourlyRate" Width="auto" Binding="{Binding StawkaGodzinowa}"/>
                 <DataGridTextColumn Header="Country" Width="auto" Binding="{Binding Kraj}"/>
-                <DataGridTextColumn Header="City" Width="auto" Binding="{Binding Miasto}" Visibility="Hidden"/>
+                <DataGridTextColumn Header="City" Width="auto" Binding="{Binding Miasto}"/>
                 <DataGridTextColumn Header="Street" Width="auto" Binding="{Binding Ulica}" Visibility="Hidden"/>
                 <DataGridTextColumn Header="StreetNo" Width="auto" Binding="{Binding NumerDomu}" Visibility="Hidden"/>
                 <DataGridTextColumn Header="HouseNo" Width="auto" Binding="{Binding NumerLokalu}" Visibility="Hidden"/>
