@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Malinowsky_Car_Rental.DB;
 
 namespace Malinowsky_Car_Rental.Views
 {
