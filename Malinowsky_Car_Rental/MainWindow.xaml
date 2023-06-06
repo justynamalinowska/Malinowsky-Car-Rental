@@ -98,6 +98,10 @@
             <views:EmployeesList>
             </views:EmployeesList>
         </DataTemplate>
+        <DataTemplate x:Name="CustomersTemplate" DataType="{x:Type viewmodels:CustomersViewModel}">
+            <views:CustomersList>
+            </views:CustomersList>
+        </DataTemplate>
     </Window.Resources>
 
 </Window>
