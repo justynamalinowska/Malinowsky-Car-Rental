@@ -28,8 +28,14 @@ namespace Malinowsky_Car_Rental
 
         private void btnEmployees_Click(object sender, RoutedEventArgs e)
         {
-            lblWindowName.Content = "Employees";
+            lblWindowName.Content = "Employees List";
             DataContext = new EmployeesViewModel();
+        }
+
+        private void btnCustomers_Click(object sender, RoutedEventArgs e)
+        {
+            lblWindowName.Content = "Customers List";
+            DataContext = new CustomersViewModel();
         }
     }
 }
