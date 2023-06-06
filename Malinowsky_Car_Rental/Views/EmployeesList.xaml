@@ -24,7 +24,7 @@
         </Grid>
         <DataGrid x:Name="gridEmployees" IsReadOnly="True" AutoGenerateColumns="False" SelectionUnit="FullRow">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="EmployeeId" Width="*" Binding="{Binding IdPracownika}"/>
+                <DataGridTextColumn Header="EmployeeId" Width="auto" Binding="{Binding IdPracownika}"/>
                 <DataGridTextColumn Header="BaseId" Width="auto" Binding="{Binding IdBazy}" Visibility="Hidden"/>
                 <DataGridTextColumn Header="PESEL" Width="auto" Binding="{Binding Pesel}"/>
                 <DataGridTextColumn Header="Name" Width="auto" Binding="{Binding Imie}"/>
