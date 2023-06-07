@@ -31,7 +31,7 @@ namespace Malinowsky_Car_Rental
             {
                 txtName.Text = klienci.Imie;
                 txtSurname.Text = klienci.Nazwisko;
-                txtPESEL.Text = klienci.Pesel;        
+                txtPESEL.Text = klienci.Pesel;
                 txtCountry.Text = klienci.Kraj;
                 txtCity.Text = klienci.Miasto;
                 txtStreet.Text = klienci.Ulica;
@@ -43,7 +43,40 @@ namespace Malinowsky_Car_Rental
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
+            if (txtPESEL.Text.Trim() == "")
+                MessageBox.Show("Please fill PESEL area!");
+            else
+            {
+                using (MalinowskyCarRentalContext db = new MalinowskyCarRentalContext())
+                {
+                    Klienci kli = new Klienci();
+                    kli.Imie = txtName.Text;
+                    kli.Nazwisko = txtSurname.Text;
+                    kli.Pesel = txtPESEL.Text;
+                    kli.Kraj = txtCountry.Text;
+                    kli.Miasto = txtCity.Text;
+                    kli.Ulica = txtStreet.Text;
+                    kli.NumerLokalu = txtApartmentNo.Text;
+                    kli.NumerDomu = txtHouseNo.Text;
+                    kli.NrTelefonu = txtContactNo.Text;
 
+                    db.Klienci.Add(kli);
+                    db.SaveChanges();
+
+                    MessageBox.Show("Customer has been added!");
+
+                    txtName.Clear();
+                    txtSurname.Clear();
+                    txtPESEL.Clear();
+                    txtCountry.Clear();
+                    txtCity.Clear();
+                    txtStreet.Clear();
+                    txtApartmentNo.Clear();
+                    txtHouseNo.Clear();
+                    txtContactNo.Clear();
+                }
+
+            }
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
