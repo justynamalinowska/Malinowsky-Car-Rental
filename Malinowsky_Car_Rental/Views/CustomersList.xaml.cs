@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,6 +23,34 @@ namespace Malinowsky_Car_Rental.Views
         public CustomersList()
         {
             InitializeComponent();
+            using (MalinowskyCarRentalContext db = new MalinowskyCarRentalContext())
+            {
+                List<Klienci> list = db.Klienci.OrderBy(x => x.IdKlienta).ToList();
+                gridCustomers.ItemsSource = list;
+            }
+        }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            CustomersPage page = new CustomersPage();
+            page.ShowDialog();
+            using (MalinowskyCarRentalContext db = new MalinowskyCarRentalContext())
+            {
+                List<Klienci> list = db.Klienci.ToList();
+                gridCustomers.ItemsSource = list;
+            }
+        }
+
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            Klienci kli = (Klienci)gridCustomers.SelectedItem;
+            CustomersPage page = new CustomersPage();
+            page.klienci = kli;
+            page.ShowDialog();
+            using (MalinowskyCarRentalContext db = new MalinowskyCarRentalContext())
+            {
+                gridCustomers.ItemsSource = db.Klienci.OrderBy(x => x.IdKlienta).ToList();
+            }
         }
     }
 }
