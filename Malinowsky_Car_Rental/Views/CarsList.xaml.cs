@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Malinowsky_Car_Rental.DB;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -21,6 +23,11 @@ namespace Malinowsky_Car_Rental.Views
         public CarsList()
         {
             InitializeComponent();
+            using (MalinowskyCarRentalContext db = new MalinowskyCarRentalContext())
+            {
+                List<Samochody> list = db.Samochody.OrderBy(x => x.IdSamochodu).ToList();
+                gridCars.ItemsSource = list;
+            }
         }
     }
 }
