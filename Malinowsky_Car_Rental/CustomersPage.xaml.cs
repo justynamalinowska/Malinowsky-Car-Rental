@@ -49,22 +49,43 @@ namespace Malinowsky_Car_Rental
             {
                 using (MalinowskyCarRentalContext db = new MalinowskyCarRentalContext())
                 {
-                    Klienci kli = new Klienci();
-                    kli.Imie = txtName.Text;
-                    kli.Nazwisko = txtSurname.Text;
-                    kli.Pesel = txtPESEL.Text;
-                    kli.Kraj = txtCountry.Text;
-                    kli.Miasto = txtCity.Text;
-                    kli.Ulica = txtStreet.Text;
-                    kli.NumerLokalu = txtApartmentNo.Text;
-                    kli.NumerDomu = txtHouseNo.Text;
-                    kli.NrTelefonu = txtContactNo.Text;
+                    if (klienci != null && klienci.IdKlienta != 0)
+                    {
+                        int idKlienta = klienci.IdKlienta;
+                        Klienci update = db.Klienci.FirstOrDefault(p => p.IdKlienta == idKlienta);
+                        update.Imie = txtName.Text;
+                        update.Nazwisko = txtSurname.Text;
+                        update.Pesel = txtPESEL.Text;
+                        update.Kraj = txtCountry.Text;
+                        update.Miasto = txtCity.Text;
+                        update.Ulica = txtStreet.Text;
+                        update.NumerLokalu = txtApartmentNo.Text;
+                        update.NumerDomu = txtHouseNo.Text;
+                        update.NrTelefonu = txtContactNo.Text;
 
-                    db.Klienci.Add(kli);
-                    db.SaveChanges();
+                        db.SaveChanges();
 
-                    MessageBox.Show("Customer has been added!");
+                        MessageBox.Show("Informations have been updated!");
+                    }
+                    else 
+                    {
+                        Klienci kli = new Klienci();
+                        kli.Imie = txtName.Text;
+                        kli.Nazwisko = txtSurname.Text;
+                        kli.Pesel = txtPESEL.Text;
+                        kli.Kraj = txtCountry.Text;
+                        kli.Miasto = txtCity.Text;
+                        kli.Ulica = txtStreet.Text;
+                        kli.NumerLokalu = txtApartmentNo.Text;
+                        kli.NumerDomu = txtHouseNo.Text;
+                        kli.NrTelefonu = txtContactNo.Text;
 
+                        db.Klienci.Add(kli);
+                        db.SaveChanges();
+
+                        MessageBox.Show("Customer has been added!");
+                    }
+                   
                     txtName.Clear();
                     txtSurname.Clear();
                     txtPESEL.Clear();
