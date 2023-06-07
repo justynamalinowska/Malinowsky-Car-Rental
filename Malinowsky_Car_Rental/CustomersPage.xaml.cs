@@ -21,5 +21,20 @@ namespace Malinowsky_Car_Rental
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
