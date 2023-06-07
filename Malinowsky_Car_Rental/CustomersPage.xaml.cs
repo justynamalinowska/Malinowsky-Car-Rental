@@ -29,7 +29,6 @@ namespace Malinowsky_Car_Rental
         {
             if (klienci != null && klienci.IdKlienta != 0)
             {
-                txtCustomerId.Text = klienci.IdKlienta.ToString();
                 txtName.Text = klienci.Imie;
                 txtSurname.Text = klienci.Nazwisko;
                 txtPESEL.Text = klienci.Pesel;        
