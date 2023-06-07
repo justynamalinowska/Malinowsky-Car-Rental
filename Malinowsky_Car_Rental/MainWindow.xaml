@@ -67,7 +67,7 @@
         </StackPanel>
 
         <StackPanel Grid.Row="5" Margin="10,10,10,10">
-            <Button Grid.Row="5" Name="btnCars" Width="200" Height="50" HorizontalAlignment="Center" Background="#FFEFA6E1">
+            <Button Grid.Row="5" Name="btnCars" Width="200" Height="50" HorizontalAlignment="Center" Background="#FFEFA6E1" Click="btnCars_Click">
                 <Grid Width="180">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="auto"/>
