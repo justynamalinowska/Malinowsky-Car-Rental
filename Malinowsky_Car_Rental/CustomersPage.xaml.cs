@@ -27,20 +27,18 @@ namespace Malinowsky_Car_Rental
         public Klienci klienci;
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            if (klienci != null && pracownicy.IdPracownika != 0)
+            if (klienci != null && klienci.IdKlienta != 0)
             {
-                txtName.Text = pracownicy.Imie;
-                txtSurname.Text = pracownicy.Nazwisko;
-                txtPESEL.Text = pracownicy.Pesel;
-                txtPosition.Text = pracownicy.Stanowisko;
-                txtHourlyRate.Text = pracownicy.StawkaGodzinowa.ToString();
-                txtCountry.Text = pracownicy.Kraj;
-                txtCity.Text = pracownicy.Miasto;
-                txtStreet.Text = pracownicy.Ulica;
-                txtApartmentNo.Text = pracownicy.NumerLokalu;
-                txtHouseNo.Text = pracownicy.NumerDomu;
-                txtContactNo.Text = pracownicy.NrTelefonu;
-                cmbBaseId.Text = pracownicy.IdBazy.ToString();
+                txtCustomerId.Text = klienci.IdKlienta.ToString();
+                txtName.Text = klienci.Imie;
+                txtSurname.Text = klienci.Nazwisko;
+                txtPESEL.Text = klienci.Pesel;        
+                txtCountry.Text = klienci.Kraj;
+                txtCity.Text = klienci.Miasto;
+                txtStreet.Text = klienci.Ulica;
+                txtApartmentNo.Text = klienci.NumerLokalu;
+                txtHouseNo.Text = klienci.NumerDomu;
+                txtContactNo.Text = klienci.NrTelefonu;
             }
         }
 
