@@ -17,7 +17,7 @@
         </Grid.RowDefinitions>
         <Label Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,77,0,0" Height="30" Width="67"/>
         <TextBox x:Name="txtName" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="160,81,0,0" Height="22"/>
-        <Label Content="PESEL" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,47,0,0" Height="30" Width="67"/>
+        <Label Content="PESEL*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,47,0,0" Height="30" Width="67"/>
         <TextBox x:Name="txtPESEL" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="160,47,0,0" Height="22"/>
         <Label Content="Surname" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,111,0,0" Height="30" Width="86"/>
         <TextBox x:Name="txtSurname" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="160,115,0,0" Height="22"/>
