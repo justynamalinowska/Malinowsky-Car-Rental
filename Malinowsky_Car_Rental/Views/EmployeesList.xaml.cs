@@ -53,5 +53,27 @@ namespace Malinowsky_Car_Rental.Views
                 gridEmployees.ItemsSource = db.Pracownicy.OrderBy(x => x.IdPracownika).ToList();
             }
         }
+
+        private void btnDelete_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to delete this record?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+            {
+                Pracownicy prac = (Pracownicy)gridEmployees.SelectedItem;
+                if (prac != null)
+                {
+                    using (MalinowskyCarRentalContext db = new MalinowskyCarRentalContext())
+                    {
+                        db.Pracownicy.Remove(prac);
+                        db.SaveChanges();
+                        MessageBox.Show("Record deleted successfully!");
+                        gridEmployees.ItemsSource = db.Pracownicy.OrderBy(x => x.IdPracownika).ToList();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No record selected!");
+                }
+            }
+        }
     }
 }
