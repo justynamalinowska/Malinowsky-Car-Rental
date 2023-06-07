@@ -102,6 +102,10 @@
             <views:CustomersList>
             </views:CustomersList>
         </DataTemplate>
+        <DataTemplate x:Name="CarsTemplate" DataType="{x:Type viewmodels:CarsViewModel}">
+            <views:CarsList>
+            </views:CarsList>
+        </DataTemplate>
     </Window.Resources>
 
 </Window>
