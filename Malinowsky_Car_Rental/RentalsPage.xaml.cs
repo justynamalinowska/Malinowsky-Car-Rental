@@ -105,20 +105,20 @@ namespace Malinowsky_Car_Rental
             using (MalinowskyCarRentalContext db = new MalinowskyCarRentalContext())
             {
 
-                List<Samochody> typySamochodow = db.Samochody.ToList();
-                cmbCarId.ItemsSource = typySamochodow;
-                cmbCarId.DisplayMemberPath = "IdTypu";
-                cmbCarId.SelectedValuePath = "IdTypu";
+                List<Samochody> samochody = db.Samochody.ToList();
+                cmbCarId.ItemsSource = samochody;
+                cmbCarId.DisplayMemberPath = "IdSamochodu";
+                cmbCarId.SelectedValuePath = "IdSamochodu";
 
                 List<Pracownicy> pracownicy = db.Pracownicy.ToList();
                 cmbEmployeeId.ItemsSource = pracownicy;
-                cmbEmployeeId.DisplayMemberPath = "EmployeeId";
-                cmbEmployeeId.SelectedValuePath = "EmployeeId";
+                cmbEmployeeId.DisplayMemberPath = "IdPracownika";
+                cmbEmployeeId.SelectedValuePath = "IdPracownika";
 
                 List<Klienci> klienci = db.Klienci.ToList();
                 cmbCustomerId.ItemsSource = klienci;
-                cmbCustomerId.DisplayMemberPath = "CustomerId";
-                cmbCustomerId.SelectedValuePath = "CustomerId";
+                cmbCustomerId.DisplayMemberPath = "IdKlienta";
+                cmbCustomerId.SelectedValuePath = "IdKlienta";
             }
 
             if (wypozyczenia != null && wypozyczenia.IdWypozyczenia != 0)
