@@ -59,5 +59,10 @@ namespace Malinowsky_Car_Rental
             lblWindowName.Content = "Rentals List";
             DataContext = new RentalsViewModel();
         }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

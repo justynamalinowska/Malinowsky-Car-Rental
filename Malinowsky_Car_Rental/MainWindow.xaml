@@ -82,7 +82,7 @@
         <StackPanel Grid.Row="6" Margin="10,10,10,10"/>
 
         <StackPanel Grid.Row="7" Margin="10,10,10,10">
-            <Button Grid.Row="7" Name="btnExit" Width="200" Height="50" HorizontalAlignment="Center" Background="#FFEFA6E1">
+            <Button Grid.Row="7" Name="btnExit" Width="200" Height="50" HorizontalAlignment="Center" Background="#FFEFA6E1" Click="btnExit_Click">
                 <Grid Width="180">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="auto"/>
