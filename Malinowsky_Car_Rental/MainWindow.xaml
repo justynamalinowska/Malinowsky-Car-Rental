@@ -55,7 +55,7 @@
         </StackPanel>
 
         <StackPanel Grid.Row="4" Margin="10,10,10,10">
-            <Button Grid.Row="4" Name="btnRentals" Width="200" Height="50" HorizontalAlignment="Center" Background="#FFEFA6E1">
+            <Button Grid.Row="4" Name="btnRentals" Width="200" Height="50" HorizontalAlignment="Center" Background="#FFEFA6E1" Click="btnRentals_Click">
                 <Grid Width="180">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="auto"/>
@@ -103,6 +103,10 @@
             </views:CustomersList>
         </DataTemplate>
         <DataTemplate x:Name="CarsTemplate" DataType="{x:Type viewmodels:CarsViewModel}">
+            <views:CarsList>
+            </views:CarsList>
+        </DataTemplate>
+        <DataTemplate x:Name="RentalsTemplate" DataType="{x:Type viewmodels:RentalsViewModel}">
             <views:CarsList>
             </views:CarsList>
         </DataTemplate>
