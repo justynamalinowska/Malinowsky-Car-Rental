@@ -26,7 +26,7 @@
                 <DataGridTextColumn Header="CarId" Width="auto" Binding="{Binding IdSamochodu}"/>
                 <DataGridTextColumn Header="TypeId" Width="auto" Binding="{Binding IdTypu}"/>
                 <DataGridTextColumn Header="BaseId" Width="auto" Binding="{Binding IdBazy}" Visibility="Hidden"/>
-                <DataGridTextColumn Header="VIN" Width="auto" Binding="{Binding vin}"/>
+                <DataGridTextColumn Header="VIN" Width="auto" Binding="{Binding Vin}"/>
                 <DataGridTextColumn Header="Milage" Width="auto" Binding="{Binding Przebieg}" />
                 <DataGridTextColumn Header="PricePerDay" Width="auto" Binding="{Binding CenaZaDzien}"/>
             </DataGrid.Columns>
