@@ -27,17 +27,18 @@
         </Grid.RowDefinitions>
         <Image HorizontalAlignment="Center" Height="146" Grid.RowSpan="2" VerticalAlignment="Center" Width="450" Source="/Images/logo4.png"/>
         <ContentControl Content="{Binding}" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="7" Height="auto" Width="auto" Margin="0,73,0,0"/>
-        <Label x:Name="lblWindowName" Content="Windows Name" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="22" Margin="250,0,0,0" Grid.RowSpan="2" Height="40" Width="164" Grid.ColumnSpan="2"/>
+        <Label x:Name="lblWindowName" Content="" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="22" Margin="250,0,0,0" Grid.RowSpan="2" Height="40" Width="164" Grid.ColumnSpan="2"/>
 
         <StackPanel Grid.Row="2" Margin="10,10,10,10">
             <Button Grid.Row="2" Name="btnEmployees" Width="200" Height="50" HorizontalAlignment="Center" Background="#FFEFA6E1" Click="btnEmployees_Click">
                 <Grid Width="180">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="auto"/>
-                        <ColumnDefinition Width="117.5"/>
+                        <ColumnDefinition Width="111.5"/>
+                        <ColumnDefinition Width="6"/>
                         <ColumnDefinition Width="1.35"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Employees" Grid.Column="1" VerticalAlignment="Center" Margin="62,0,-29,0" Grid.ColumnSpan="2" FontSize="16"/>
+                    <TextBlock Text="Employees" Grid.Column="1" VerticalAlignment="Center" Margin="47,0,-14,0" Grid.ColumnSpan="3" FontSize="16"/>
                 </Grid>
             </Button>
         </StackPanel>
@@ -49,7 +50,7 @@
                         <ColumnDefinition Width="auto"/>
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Customers" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="59,0,0,0" FontSize="16"/>
+                    <TextBlock Text="Customers" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="52,0,0,0" FontSize="16"/>
                 </Grid>
             </Button>
         </StackPanel>
@@ -61,7 +62,7 @@
                         <ColumnDefinition Width="auto"/>
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Rentals" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="71,0,0,0" FontSize="16"/>
+                    <TextBlock Text="Rentals" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60,0,0,0" FontSize="16"/>
                 </Grid>
             </Button>
         </StackPanel>
@@ -73,7 +74,7 @@
                         <ColumnDefinition Width="auto"/>
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Cars" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="79,0,0,0" FontSize="16"/>
+                    <TextBlock Text="Cars" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="75,0,0,0" FontSize="16"/>
                 </Grid>
             </Button>
         </StackPanel>
@@ -87,7 +88,7 @@
                         <ColumnDefinition Width="auto"/>
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Exit" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="81,0,0,0" FontSize="16"/>
+                    <TextBlock Text="Exit" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="78,0,0,0" FontSize="16"/>
                 </Grid>
             </Button>
         </StackPanel>
