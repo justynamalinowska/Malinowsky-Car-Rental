@@ -98,6 +98,7 @@ namespace Malinowsky_Car_Rental
                     txtApartmentNo.Clear();
                     txtHouseNo.Clear();
                     txtContactNo.Clear();
+                    cmbBaseId.SelectedItem = null;
                 }
             }
             else
