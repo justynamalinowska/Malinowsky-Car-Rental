@@ -43,5 +43,14 @@ namespace Malinowsky_Car_Rental
             lblWindowName.Content = "Cars List";
             DataContext = new CarsViewModel();
         }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RentalMainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
