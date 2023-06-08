@@ -72,5 +72,6 @@ namespace Malinowsky_Car_Rental.Views
                     MessageBox.Show("No record selected!");
                 }
             }
+        }
     }
 }
