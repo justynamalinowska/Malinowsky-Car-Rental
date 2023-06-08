@@ -107,8 +107,8 @@
             </views:CarsList>
         </DataTemplate>
         <DataTemplate x:Name="RentalsTemplate" DataType="{x:Type viewmodels:RentalsViewModel}">
-            <views:CarsList>
-            </views:CarsList>
+            <views:RentalsList>
+            </views:RentalsList>
         </DataTemplate>
     </Window.Resources>
 
