@@ -32,7 +32,7 @@ namespace Malinowsky_Car_Rental
         {
             if (cmbBaseId.SelectedItem != null && txtPESEL.Text.Length == 11)
             {
-                int idBazy = ((ComboValue)cmbBaseId.SelectedItem).Id;
+                int idBazy = (int)cmbBaseId.SelectedValue;
 
                 using (MalinowskyCarRentalContext db = new MalinowskyCarRentalContext())
                 {
@@ -68,7 +68,7 @@ namespace Malinowsky_Car_Rental
                     else
                     {
                         Pracownicy emp = new Pracownicy();
-                        emp.IdBazy = cmbBaseId.SelectedIndex;
+                        emp.IdBazy = idBazy;
                         emp.Pesel = txtPESEL.Text;
                         emp.Imie = txtName.Text;
                         emp.Nazwisko = txtSurname.Text;
@@ -109,24 +109,22 @@ namespace Malinowsky_Car_Rental
 
         private void cmbBaseId_Loaded(object sender, RoutedEventArgs e)
         {
-            List<ComboValue> list = new List<ComboValue>();
-            ComboValue item1 = new ComboValue();
-            item1.Id = 1;
-            item1.Name = "Base1";
-            ComboValue item2 = new ComboValue();
-            item2.Id = 2;
-            item2.Name = "Base2";
-            list.Add(item1);
-            list.Add(item2);
-
-            cmbBaseId.ItemsSource = list;
-            cmbBaseId.DisplayMemberPath = "Name";
-            cmbBaseId.SelectedValuePath = "Id";
+           
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            if (pracownicy != null && pracownicy.IdPracownika != 0)
+            using (MalinowskyCarRentalContext db = new MalinowskyCarRentalContext())
+            {
+
+                List<Bazy> bazy = db.Bazy.ToList();
+
+
+                cmbBaseId.ItemsSource = bazy;
+                cmbBaseId.DisplayMemberPath = "IdBazy";
+                cmbBaseId.SelectedValuePath = "IdBazy";
+            }
+                if (pracownicy != null && pracownicy.IdPracownika != 0)
             {
                 txtName.Text = pracownicy.Imie;
                 txtSurname.Text = pracownicy.Nazwisko;
