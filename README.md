@@ -13,18 +13,20 @@ This is a car rental application built using WPF (Windows Presentation Foundatio
 
 - Windows operating system
 - Visual Studio installed
+- MS SQL Server installed
 
-## Installation
-
-To run the application locally, follow these steps:
-
+## Installation and Configuration MSSQL
+The application requires a database to store the data. Follow the below steps to setup database.
 1. Download the ZIP archive of the project by clicking on the "Download ZIP" button.
 2. Extract the contents of the ZIP archive to a desired location on your computer.
-3. Open Visual Studio.
-4. Click on "Open a project or solution" and navigate to the extracted folder.
-5. Select the solution file (`.sln`) and click "Open" to open the solution in Visual Studio.
-6. Build the solution by clicking on the "Build" menu and selecting "Build Solution".
-7. Once the solution is built successfully, click on the "Start" button (green triangle) to run the application.
+3. Run the script 'MalinowskyCarRental.sql'.
+4. Set the connection string     
+- Open 'Malinowsky-Car-Rental.sln'
+- Go to Properties in Solution Explorer
+- Go to Settings.settings
+- Insert Name as 'connString', Type as (Connection String), Scope as Application and Value as Connection String of Database.
+5. Build the solution by clicking on the "Build" menu and selecting "Build Solution".
+6. Once the solution is built successfully, click on the "Start" button (green triangle) to run the application.
 
 ## Usage
 
