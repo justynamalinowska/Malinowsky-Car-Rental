@@ -18,7 +18,7 @@
 
         <Label Content="TypeId*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="78,110,0,0" Height="36" Width="66"/>
         <ComboBox x:Name="cmbTypeId" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="188,109,0,0" Height="32"/>
-        <Label Content="BaseId" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="78,151,0,0" Height="30" Width="86"/>
+        <Label Content="BaseId*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="78,151,0,0" Height="30" Width="86"/>
         <ComboBox x:Name="cmbBaseId" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="188,150,0,0" Height="32"/>
 
         <Label Content="VIN*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,87,0,0" Height="30" Width="84" Grid.Column="1"/>
