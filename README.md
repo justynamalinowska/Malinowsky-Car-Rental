@@ -12,7 +12,7 @@ This is a car rental application built using WPF (Windows Presentation Foundatio
 ## Prerequisites
 
 - Windows operating system
-- Visual Studio (version XYZ) installed
+- Visual Studio installed
 
 ## Installation
 
