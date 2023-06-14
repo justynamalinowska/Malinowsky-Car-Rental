@@ -21,8 +21,8 @@
         <Label Content="BaseId*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="78,151,0,0" Height="30" Width="86"/>
         <ComboBox x:Name="cmbBaseId" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="188,150,0,0" Height="32"/>
 
-        <Label Content="VIN*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,87,0,0" Height="30" Width="84" Grid.Column="1"/>
-        <TextBox x:Name="txtVin" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="187,87,0,0" Height="22" Grid.Column="1"/>
+        <Label Content="VIN* (17)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,87,0,0" Height="30" Width="84" Grid.Column="1"/>
+        <TextBox x:Name="txtVin" Width="202" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="141,87,0,0" Height="22" Grid.Column="1"/>
         <Label Content="Milage*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,126,0,0" Grid.Column="1" Height="45" Width="84"/>
         <TextBox x:Name="txtMileage" Width="156" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Margin="187,125,0,0" Grid.Column="1" Height="22"/>
         <Label Content="PricePerDay*" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="41,166,0,0" Grid.Column="1" Height="42" Width="112"/>
